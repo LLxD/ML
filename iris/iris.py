@@ -18,11 +18,10 @@ print("Acerto do MLP sem separação da base de dados dos testes: ",mlp.score(va
 print("Acerto do MLP com separação da base de dados dos testes: ",mlp_with_separation_data.score(values,classes))
 
 #Plotting
+pyplot.figure()
 pyplot.plot(mlp.loss_curve_)
+pyplot.plot(mlp_with_separation_data.loss_curve_)
 pyplot.savefig('mlp_loss.png')
-
-pyplot.plot(mlp.loss_curve_)
-pyplot.savefig('mlp_separation_loss.png')
 
 
 #Guessing
