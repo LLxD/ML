@@ -40,5 +40,5 @@ mse = [
 ]
 
 plt.figure()
-plt.plot(mse, range(0,12))
+plt.plot(range(0,12),mse)
 plt.savefig("MSE.png")
